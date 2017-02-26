@@ -12,15 +12,15 @@
 , "engines"             : { "node"  : ">= 0.10.0" , "npm": ">= 1.0.0"}
 , "config"              : { "HOST"  : "localhost"
                           , "PORT"  : 4223
-                          , "RHOST" : "r-bfhi9.rhcloud.com"
+                          , "RHOST" : "r"
                           , "RPORT" : 80
                           , "RIDX"  : "home"
-                          , "LOC"   : "x4M"
-                          , "HID"   : "hYa"
-                          , "BID"   : "fVt"
-                          , "AID"   : "i9Z"
-                          , "MID"   : "6RrQ6E"
-                          , "RID"   : "3cw7Bq"
+                          , "LOC"   : "M"
+                          , "HID"   : "a"
+                          , "BID"   : "t"
+                          , "AID"   : "Z"
+                          , "MID"   : "E"
+                          , "RID"   : "q"
                           , "DELAY" : 15000
                           , "DELTA" : 0.001
                           }
