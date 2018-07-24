@@ -1,27 +1,29 @@
-{ "name"                : "tinker"
-, "descrioption"        : "IoT device gateway tinkerforge, rule-based, restful forker"
-, "author"              : "robo.drone@e.mail.de"
-, "license"             : "Free"
-, "version"             : "1.0.0"
+{ "name"                : "swtfiot"
+, "description"         : "IoT device gateway tinker restful"
+, "author"              : "demonstratorium"
+, "license"             : "MIT"
+, "version"             : "0.0.2"
 , "dependencies"        : {}
 , "bundleDependencies"  : []
 , "scripts"             : { "start"       : "node server.js"
-                          , "build:sfile" :  "echo '=> sfile babel' && babel server.js -o ./bserver.js --compact --minified --no-comments"
-            }
+                          }
 , "main"                : "server.js"
-, "engines"             : { "node"  : ">= 0.10.0" , "npm": ">= 1.0.0"}
-, "config"              : { "HOST"  : "localhost"
-                          , "PORT"  : 4223
-                          , "RHOST" : "r"
-                          , "RPORT" : 80
-                          , "RIDX"  : "home"
-                          , "LOC"   : "M"
-                          , "HID"   : "a"
-                          , "BID"   : "t"
-                          , "AID"   : "Z"
-                          , "MID"   : "E"
-                          , "RID"   : "q"
-                          , "DELAY" : 15000
-                          , "DELTA" : 0.001
+, "engines"             : { "node"  : "*"
+                          , "npm"   : "*"
+                          }
+
+, "config"              : { "BACKUP_TIME" : 15000
+                          , "DELTA"       : 0.001
+                          , "MESS_TIME"   :   500
+			                    , "IS_LOG"      : false	
+			                    , "LOC"					: "x5D"
+			                    , "SENSORS"     : { "BrickMaster"          : "6RrQ6E"
+                                            , "BrickletHumidity"     : "hYa"
+                                            , "BrickletBarometer"    : "fVt" 
+                                            , "BrickletAmbientLight" : "i9Z"
+                                            }
+                          ,   "BRICK"     : { "host"                 : "localhost"
+                                            , "port"                 :  4223 
+                                            }           
                           }
 }
